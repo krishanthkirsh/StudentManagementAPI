@@ -12,7 +12,7 @@ namespace StudentManagement.DataLayer
         Course FindById(object Id);
         string Add(Course entity);
         string Update(Course entity);
-        void Delete(Course entity);
+        string Delete(Course entity);
         void Save();
     }
 }

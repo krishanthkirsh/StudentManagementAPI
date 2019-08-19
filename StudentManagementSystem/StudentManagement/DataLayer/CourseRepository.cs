@@ -42,10 +42,11 @@ namespace StudentManagement.DataLayer
             return entity.Id.ToString();
         }
 
-        public void Delete(Course entity)
+        public string Delete(Course entity)
         {
             dbSet.Remove(entity);
             Save();
+            return "Success";
         }
 
         public void Save()
